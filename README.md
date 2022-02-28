@@ -1,3 +1,46 @@
+# 简介
+
+简单实现 diff 算法核心部分
+
+## 目录结构
+
+```
+├─ public                           # 静态资源
+│   └─ index.html                   # html模板
+├─ src                              # 项目源代码
+│   ├─ dom                          # diff算法对应方法
+│   │   ├─ h.js                     # h函数
+│   │   ├─ patch.js                 # patch函数
+│   │   ├─ vnode.js                 # vnode函数
+│   │   ├─ createElement.js         # createElement函数
+│   │   ├─ patchVnode.js            # patchVnode函数
+│   │   └─ updataChildren.js        # updataChildren函数
+│   └─index.js                      # 入口文件
+├── .gitignore                      # 不用提交的文件
+├── server.js                       # 实时更新页面
+├── webpack.config.js               # webpack基本配置
+└── package.json                    # package.json
+```
+
+## 安装
+
+```
+# 克隆项目
+git clone (项目地址)
+
+# 进入项目目录
+cd diff
+
+# 安装依赖
+npm install
+
+# 切换淘宝源，解决 npm 下载速度慢的问题
+# npm install --registry=https://registry.npm.taobao.org
+
+# 启动服务
+npm start
+```
+
 # diff 算法理论
 
 功能：提升性能
